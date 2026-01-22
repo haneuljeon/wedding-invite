@@ -55,27 +55,27 @@ document.getElementById("btnShare")?.addEventListener("click", async () => {
 });
 
 // 캘린더 저장(ics 다운로드)
-document.getElementById("btnAddCalendar")?.addEventListener("click", () => {
-  // TODO: 실제 날짜로 바꾸기 (YYYYMMDDTHHMMSS)
-  const ics =
-`BEGIN:VCALENDAR
-VERSION:2.0
-PRODID:-//wedding//invite//KR
-BEGIN:VEVENT
-UID:${Date.now()}@invite
-DTSTAMP:20260101T000000Z
-DTSTART:20260101T030000Z
-DTEND:20260101T040000Z
-SUMMARY:OOO ❤ OOO 결혼식
-LOCATION:OO웨딩홀
-DESCRIPTION:모바일 청첩장
-END:VEVENT
-END:VCALENDAR`;
+// document.getElementById("btnAddCalendar")?.addEventListener("click", () => {
+//   // TODO: 실제 날짜로 바꾸기 (YYYYMMDDTHHMMSS)
+//   const ics =
+// `BEGIN:VCALENDAR
+// VERSION:2.0
+// PRODID:-//wedding//invite//KR
+// BEGIN:VEVENT
+// UID:${Date.now()}@invite
+// DTSTAMP:20260920T000000Z
+// DTSTART:20260920T030000Z
+// DTEND:20260920T040000Z
+// SUMMARY:석준기 ❤ 전하늘 결혼식
+// LOCATION:인터불고 
+// DESCRIPTION:모바일 청첩장
+// END:VEVENT
+// END:VCALENDAR`;
 
-  const blob = new Blob([ics], { type: "text/calendar;charset=utf-8" });
-  const a = document.createElement("a");
-  a.href = URL.createObjectURL(blob);
-  a.download = "wedding.ics";
-  a.click();
-  URL.revokeObjectURL(a.href);
-});
+//   const blob = new Blob([ics], { type: "text/calendar;charset=utf-8" });
+//   const a = document.createElement("a");
+//   a.href = URL.createObjectURL(blob);
+//   a.download = "wedding.ics";
+//   a.click();
+//   URL.revokeObjectURL(a.href);
+// });
