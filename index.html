@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>석준기 ❤ 전하늘 모바일 청첩장</title>
+
+
+  <meta property="og:title" content="석준기 ❤ 전하늘 결혼합니다" />
+  <meta property="og:description" content="2026.00.00 (토) 00:00 · OO웨딩홀" />
+  
+  <meta property="og:image" content="https://USERNAME.github.io/wedding-invite/img/main.jpg" />
+  <meta property="og:url" content="https://USERNAME.github.io/wedding-invite/" />
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@latest/dist/web/static/pretendard.css">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="hero">
+    <img class="hero-img" src="img/main.jpg" alt="메인사진" />
+    <div class="hero-txt">
+      <p class="hero-date">2026 .09. 20 SUN · 12:30</p>
+      <h1 class="hero-names">석준기 <span class="heart">❤</span> 전하늘</h1>
+      <p class="hero-place">인터불고 만촌 파크빌리지 웨딩홀</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <h2 class="sec-title">초대합니다</h2>
+      <p class="para">
+        냠냠<br/>
+        냠냠<br/>
+        귀한 걸음으로 축복해 주세요.
+      </p>
+      <div class="line"></div>
+      <div class="pair">
+        <div class="who">
+          <span class="label">신랑</span>
+          <strong>석준기</strong>
+          <a class="tel" href="tel:010-2032-머더라">전화</a>
+        </div>
+        <div class="who">
+          <span class="label">신부</span>
+          <strong>전하늘</strong>
+          <a class="tel" href="tel:010-8418-9477">전화</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 class="sec-title">예식 안내</h2>
+      <ul class="list">
+        <li><span>일시</span><b>2026년 09월 20일 (일) 12:30</b></li>
+        <li><span>장소</span><b>인터불고 만촌 (주소)</b></li>
+        <li><span>교통</span><b>지하철/버스/주차 안내 문구</b></li>
+      </ul>
+      <button class="btn" id="btnAddCalendar">📅 캘린더에 저장</button>
+    </section>
+
+    <section class="card">
+      <h2 class="sec-title">갤러리</h2>
+      <div class="gallery" id="gallery">
+        <button class="thumb" data-src="img/g1.jpg"><img src="img/g1.jpg" alt="g1"></button>
+        <button class="thumb" data-src="img/g2.jpg"><img src="img/g2.jpg" alt="g2"></button>
+        <button class="thumb" data-src="img/g3.jpg"><img src="img/g3.jpg" alt="g3"></button>
+        <button class="thumb" data-src="img/g4.jpg"><img src="img/g4.jpg" alt="g4"></button>
+      </div>
+      <p class="hint">사진을 누르면 크게 볼 수 있어요.</p>
+    </section>
+
+    <section class="card">
+      <h2 class="sec-title">오시는 길</h2>
+      <div class="mapbox">
+        <p class="para small">
+          인터불고<br/>
+     
+        </p>
+        <div class="btn-row">
+          <a class="btn ghost" href="https://map.kakao.com/" target="_blank" rel="noopener">카카오맵</a>
+          <a class="btn ghost" href="https://map.naver.com/" target="_blank" rel="noopener">네이버지도</a>
+          <a class="btn ghost" href="https://maps.google.com/" target="_blank" rel="noopener">구글맵</a>
+        </div>
+      </div>
+      <p class="hint"></p>
+    </section>
+
+    <section class="card">
+      <h2 class="sec-title">마음 전하실 곳</h2>
+      <div class="accounts">
+        <div class="acc">
+          <div>
+            <b>신랑측</b>
+            <div class="muted">01084189477(기업) · 전하늘</div>
+          </div>
+          <button class="btn mini" data-copy="기업 01084189477 전하늘">복사</button>
+        </div>
+        <div class="acc">
+          <div>
+            <b>신부측</b>
+            <div class="muted">01084189477(기업) · 전하늘</div>
+          </div>
+          <button class="btn mini" data-copy="기업 01084189477 전하늘">복사</button>
+        </div>
+      </div>
+      <p class="hint">복사 버튼을 누르면 계좌가 복사돼요.</p>
+    </section>
+
+    <section class="card">
+      <h2 class="sec-title">참석 여부</h2>
+      <p class="para small">
+        준비에 도움이 되도록 참석 여부를 알려주시면 감사하겠습니다.
+      </p>
+      <div class="btn-row">
+        <!-- 구글폼 링크로 교체 추천 (완전 무료) -->
+        <a class="btn" href="https://forms.gle/" target="_blank" rel="noopener">참석 설문(구글폼)</a>
+        <a class="btn ghost" href="https://open.kakao.com/" target="_blank" rel="noopener">카톡으로 알려주기</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <button class="btn wide" id="btnShare">📩 링크 공유하기</button>
+      <p class="foot-muted">© OOO & OOO</p>
+    </footer>
+  </main>
+
+  <!-- 모달(갤러리 확대) -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-bg" id="modalBg"></div>
+    <img class="modal-img" id="modalImg" alt="큰사진" />
+    <button class="modal-close" id="modalClose" aria-label="닫기">✕</button>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
